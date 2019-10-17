@@ -1,0 +1,21 @@
+/* Contoh Box Model Padding & Border */
+
+div {
+    width: 500px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.div1 {
+    background-color: violet;
+    padding: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+}
+
+.div2 {
+    background-color: lightblue;
+    padding: 30px;
+    border: 10px dashed blue;
+}
