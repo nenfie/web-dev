@@ -1,0 +1,180 @@
+/* Font */
+@font-face {
+    font-family: "BebasNeue";
+    src: url("../fonts/BebasNeue-Regular.woff") format("woff");
+}
+
+/* Main Style */
+body {
+    font: 18px;
+    line-height: 36px;
+    font-family: "BebasNeue", Arial, Helvetica, sans-serif;
+    background-color: rgba(141, 149, 156, 0.8);
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px 0px;
+    text-align: center;
+    text-shadow: 1px 2px 2px white;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .25);
+    border-radius: 5px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    /*overflow: hidden;*/
+    border: 5px solid darkgray;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.gallery li,
+.gallery li a img,
+.gallery li span {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: 0.5s;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
+
+/* Overlay */
+.overlay {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: 0.8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, .7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+    animation: zoomIn 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px white;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+
+.overlay:target .next,
+.overlay:target .prev {
+    animation: zoomIn .5s .5s forwards;
+}
+
+/* Navigation */
+.next,
+.prev {
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/btn-next.png");
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url("../img/btn-prev.png");
+    margin-left: -100px;
+}
+
+/* Animation */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes zoomAndFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}

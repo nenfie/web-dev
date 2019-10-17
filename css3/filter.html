@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>CSS3 : Filter</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        /* Filter
+                blur(px)
+                brightness(angka | %)
+                saturate(angka | %)
+                grayscale(angka | %)
+                sepia(angka | %)
+                hue-rotate(deg)
+                invert(angka | %)
+                opacity(angka | %)
+                drop-shadow(sama seperti box-shadow)
+            */
+
+        img {
+            width: 80%;
+            height: 80%;
+            filter: blur(15px) brightness(150%);
+        }
+
+        img:hover {
+            width: 80%;
+            height: 80%;
+            filter: blur(0px) brightness(100%) drop-shadow(5px 5px 5px black);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/store-house.jpg" alt="">
+</body>
+
+
+</html>
