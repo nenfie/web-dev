@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>HTML Dasar : Form</title>
+</head>
+
+<body>
+    <!--contoh tag form dan element-nya-->
+    <form action="">
+
+        <table border="0" cellspacing="0">
+            <tr>
+                <!--contoh form element label-->
+                <td><label for="Username">Nama Pengguna : </label></td>
+                <!--contoh form element text-->
+                <td><input type="text" id="Username"></td>
+            </tr>
+            <tr>
+                <td><label for="Password">Kata Kunci : </label></td>
+                <!--contoh form element password-->
+                <td><input type="password" id="Password"></td>
+            </tr>
+            <tr>
+                <td><label for="">Jenis Kelamin : </label></td>
+                <td>
+                    <!--contoh form element radio button-->
+                    <input type="radio" id="Male" name="Gender"><label for="Male">Laki-laki</label>
+                    <input type="radio" id="Female" name="Gender"><label for="Female">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Education">Pendidikan : </label></td>
+                <td>
+                    <!--contoh form element select/dropdown-->
+                    <select name="" id="Education">
+                        <option value="Diploma">Diploma</option>
+                        <option value="Bachelor">Sarjana</option>
+                        <option value="Master">Master</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Minat : </label></td>
+                <td>
+                    <!--contoh form element checkbox-->
+                    <input type="checkbox" id="Programming" name="Hobby"><label for="Programming">Programming</label>
+                    <input type="checkbox" id="Networking" name="Hobby"><label for="Networking">Networking</label>
+                    <input type="checkbox" id="Database" name="Hobby"><label for="Database">Database</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="About">Tentang Pengguna : </label></td>
+                <!--contoh form element textarea-->
+                <td><textarea name="" id="About" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <!--contoh form element button-->
+                    <button type="reset">Ulangi</button>
+                    <button type="button">Simpan</button>
+                    <button type="submit">Kirim</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
