@@ -1,0 +1,10 @@
+/* Contoh Inheritance */
+
+body {
+    font-family: arial;
+    color: darkgrey;
+}
+
+a {
+    color: inherit;
+}

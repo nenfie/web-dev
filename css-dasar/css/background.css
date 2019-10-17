@@ -1,0 +1,8 @@
+/* Contoh Background */
+
+body {
+    background-color: lightblue;
+    background-image: url(../img/css-logo.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}

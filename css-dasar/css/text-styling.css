@@ -1,0 +1,19 @@
+/* Contoh Text-styling */
+
+h1 {
+    color: skyblue;
+    text-decoration: line-through;
+    text-transform: lowercase;
+}
+
+p {
+    text-align: center;
+    text-indent: 200px;
+    text-transform: capitalize;
+    word-spacing: 10px;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 10px;
+}

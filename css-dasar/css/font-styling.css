@@ -1,0 +1,14 @@
+/* Contoh Font-styling */
+
+h1 {
+    font-family: arial, verdana, sans-serif;
+    font-size: 100px;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+p {
+    font-family: Georgia, serif;
+    line-height: 40px;
+}
